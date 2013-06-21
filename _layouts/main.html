@@ -3,20 +3,27 @@
     <head>
         <meta charset="utf-8">
         <title>{{ page.title }} | Základní umělecká škola Boskovice</title>
-        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="/css/main.css" rel="stylesheet" media="screen">
+        <link href="/lib/zoomable-type/zt.css" rel="stylesheet" media="all">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="/lib/zoomable-type/zt.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="/bootstrap/js/bootstrap.min.js"></script>
-        <div class="content container">
-
+        <script>
+        $(document).ready(function() {
+            $('.zoomable').zoomabletype();
+        });
+        </script>
+        <div class="content">
+            <!-- title image -->
             <div class="jumbotron {{ page.photo }}">
                 <h1>Základní umělecká škola Boskovice</h1>
                 <p class="lead">&gt; {{ page.title }}</p>
             </div>
-
-            <ul class="menu">
+            <!-- menu -->
+            <ul class="menu clearfix">
                 <li class="skola">
                     <a href="/skola/">Škola</a>
                     <ul>
@@ -34,9 +41,29 @@
                 <li class="tanec"><a href="/tanec/">Taneční obor</a></li>
                 <li class="drama"><a href="/drama/">Dramatický obor</a></li>
             </ul>
-
-            {{ content }}
-
+            <!-- main content -->
+            <div class="container">
+                {{ content }}
+            </div>
+            <!-- footer -->
+            <div class="footer row">
+                <div class="span8">
+                    <p class="muted">Základní umělecká škola Boskovice</p>
+                    <ul class="unstyled">
+                        <li><a href="http://mapy.cz/s/7Cim">Náměstí 9. května</a>
+                        <li><a href="https://www.facebook.com/zus.boskovice">Facebook</a>
+                        <li><span class="zoomable">516 452 250</span>
+                        <li><span class="zoomable">725 865 088</span>
+                    </ul>
+                </div>
+                <div class="span4">
+                    <p class="muted">Tiráž</p>
+                    <p>
+                        aktualizováno v červnu 2013<br>
+                        <a href="http://zmotula.cz/">zmotula.cz</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
