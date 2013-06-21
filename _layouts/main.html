@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }} | Základní umělecká škola Boskovice</title>
+        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="/css/main.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <div class="content container">
+
+            <div class="jumbotron {{ page.photo }}">
+                <h1>Základní umělecká škola Boskovice</h1>
+                <p class="lead">&gt; {{ page.title }}</p>
+            </div>
+
+            <ul class="menu">
+                <li class="skola">
+                    <a href="/skola/">Škola</a>
+                    <ul>
+                        <li><a href="/skola/kontakty.html">Kontakty</a></li>
+                        <li><a href="/skola/ucitele.html">Učitelé</a></li>
+                    </ul>
+                </li>
+                <li class="hudba">
+                    <a href="/hudba/">Hudební obor</a>
+                    <ul>
+                        <li><a href="/hudba/rozvrh.html">Rozvrh</a></li>
+                    </ul>
+                </li>
+                <li class="vytvarka"><a href="/vytvarka/">Výtvarný obor</a></li>
+                <li class="tanec"><a href="/tanec/">Taneční obor</a></li>
+                <li class="drama"><a href="/drama/">Dramatický obor</a></li>
+            </ul>
+
+            {{ content }}
+
+        </div>
+    </body>
+</html>
