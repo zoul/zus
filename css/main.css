@@ -21,10 +21,10 @@ body {
     text-shadow: black 1px 1px 2px;
 }
 
-.jumbotron.kytara  { background-image: url(/img/kytara.jpg);  } 
-.jumbotron.strevic { background-image: url(/img/strevic.jpg); } 
-.jumbotron.platno  { background-image: url(/img/platno.jpg);  } 
-.jumbotron.scenar  { background-image: url(/img/scenar.jpg);  } 
+body.kytara  .jumbotron  { background-image: url(/img/kytara.jpg);  }
+body.strevic .jumbotron  { background-image: url(/img/strevic.jpg); }
+body.platno  .jumbotron  { background-image: url(/img/platno.jpg);  }
+body.scenar  .jumbotron  { background-image: url(/img/scenar.jpg);  }
 
 .jumbotron p {
     text-transform: lowercase;

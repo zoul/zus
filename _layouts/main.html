@@ -10,7 +10,7 @@
         <script src="/lib/zoomable-type/zt.js"></script>
         <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body class="{{ page.photo }}">
         <script>
         $(document).ready(function() {
             $('.zoomable').zoomabletype();
@@ -18,7 +18,7 @@
         </script>
         <div class="content">
             <!-- title image -->
-            <div class="jumbotron {{ page.photo }}">
+            <div class="jumbotron">
                 <h1>Základní umělecká škola Boskovice</h1>
                 <p class="lead">&gt; {{ page.title }}</p>
             </div>
