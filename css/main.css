@@ -105,5 +105,9 @@ h2.ruled {
 }
 
 .twitter-timeline {
-    width: 300px;
+    width: 380px;
+}
+
+.thumbnail {
+    margin-bottom: 20px;
 }
