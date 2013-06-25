@@ -72,7 +72,6 @@ h2.ruled {
 
 .menu a {
     display: block;
-    width: 166px;
     padding: 10px;
     padding-left: 20px;
     text-decoration: none;
@@ -89,11 +88,11 @@ h2.ruled {
     display: block;
 }
 
-.menu .skola a    { background: #ff7100; }
-.menu .hudba a    { background: #66a1d2; }
-.menu .vytvarka a { background: #ff9400; }
-.menu .tanec a    { background: #009b95; }
-.menu .drama a    { background: #fa3e54; }
+.menu .skola a    { background: #ff7100; width: 146px; }
+.menu .hudba a    { background: #66a1d2; width: 162px; }
+.menu .vytvarka a { background: #ff9400; width: 162px; }
+.menu .tanec a    { background: #009b95; width: 180px; }
+.menu .drama a    { background: #fa3e54; width: 180px; }
 
 .menu a:hover { background: gray; }
 
