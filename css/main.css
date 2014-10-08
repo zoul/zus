@@ -42,11 +42,6 @@ h2.ruled {
     border-bottom: 1px solid #ddd;
 }
 
-h2:not(:first-child) {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
 .footer {
     margin: auto;
     border-top: 3px solid silver;
