@@ -28,20 +28,19 @@ body.strevic .jumbotron  { background-image: url(/img/strevic.jpg); }
 body.platno  .jumbotron  { background-image: url(/img/platno.jpg);  }
 body.scenar  .jumbotron  { background-image: url(/img/scenar.jpg);  }
 
-.jumbotron p {
-    text-transform: lowercase;
-}
-
 h1 {
     width: 10ex;
     line-height: 1.2em;
-    text-transform: capitalize;
 }
 
 h2.ruled {
     padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
+}
+
+h3 {
+    margin-top: 20px;
 }
 
 .footer {
