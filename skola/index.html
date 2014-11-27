@@ -3,6 +3,9 @@ layout: main
 title: Aktuality
 photo: fletna
 ---
+<script src="/lib/moment.js"></script>
+<script src="/lib/news.js"></script>
+<script src="https://api.app.net/users/@zuska/posts?callback=loadNews"></script>
 <div class="row-fluid">
     <div class="span7">
         <h2 class="ruled">O škole</h2>
@@ -27,8 +30,9 @@ photo: fletna
     </div>
     <div class="span5">
         <h2 class="ruled">Aktuality</h2>
-        <p>Do nového školního roku s novým webem! (Konečně.) Zatím je
-        nový web stručnější, než bychom chtěli – vydržte prosím, budeme
-        se snažit co nejrychleji přidat všechno, co by vás mohlo zajímat.</p>
+        <div id="news">
+        <p>Pokud tu nevidíte seznam aktualit, něco se zřejmě rozbilo.
+        Zkuste to znovu nebo později, případně <a href="mailto:posta@zusboskovice.cz">reklamujte</a>.</p>
+        </div>
     </div>
 </div>
