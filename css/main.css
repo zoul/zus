@@ -54,6 +54,12 @@ h2.ruled {
 
 /* Fonts */
 
+body {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
 h1, h2, h3 {
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
@@ -66,6 +72,8 @@ h3 { font-weight: 300; }
 /* Menu */
 
 .menu, .menu ul {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
     list-style: none;
     padding: 0;
     margin: 0;
