@@ -96,6 +96,47 @@ h2.ruled {
 
 .menu a:hover { background: gray; }
 
+/* File List */
+
+.file-list {
+    list-style: none;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.file-list li {
+    display: inline-block;
+    margin-right: 20px;
+    width: 100px;
+    vertical-align: top;
+}
+
+.file-list a {
+    text-align: center;
+    padding-top: 20px;
+    display: block;
+}
+
+.file-list a:hover {
+    text-decoration: none;
+}
+
+.file-list a:before {
+    content: "\f1c1";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+
+.file-list a[href$=".doc"]:before {
+    content: "\f1c2";
+}
+
 /* Content */
 
 .zoomable {
