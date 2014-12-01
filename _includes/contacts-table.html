@@ -1,0 +1,29 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Jméno</th>
+            <th>E-mail</th>
+            <th>Telefon</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for employee in people %}
+        <tr>
+            {% if employee.role %}
+            <td>
+                {{ employee.jmeno }}<br>
+                <span class="muted">{{ employee.role }}</span>
+            </td>
+            {% else %}
+            <td>{{ employee.jmeno }}</td>
+            {% endif %}
+            <td><a href="mailto:{{ employee.mail }}">{{ employee.mail }}</a></td>
+            <td>
+            {% for number in employee.telefon %}
+                <span class="zoomable">{{ number }}</span><br>
+            {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

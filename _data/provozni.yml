@@ -1,0 +1,22 @@
+- jmeno: "Matušková Stanislava"
+  mail: matuskova@zusboskovice.cz
+  telefon: "725 865 073"
+  role: ředitelka
+- jmeno: "Vymazalová Michaela"
+  mail: vymazalova@zusboskovice.cz
+  telefon: "725 865 189"
+  role: zástupkyně ředitelky
+- jmeno: "Žemlová Božena"
+  mail: zemlova@zusboskovice.cz
+  telefon:
+    - "516 452 250"
+    - "725 865 088"
+  role: ekonomka
+- jmeno: "Dvořáčková Věra"
+  role: sekretářka
+  telefon:
+    - "516 452 250"
+    - "725 865 088"
+- jmeno: "Žemla Josef"
+  role: školník
+  telefon: "725 865 146"
